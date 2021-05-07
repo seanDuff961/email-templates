@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @font-face {
+            font-family: "Roboto";
+            src: url("/fonts/Roboto-Regular.ttf");
+        }
+        @font-face {
+            font-family: "Roboto Bold";
+            src: url("/fonts/Roboto-Black.ttf");
+        }
+        html {
+            -webkit-text-size-adjust: 100%;
+        }
+        body {
+            margin: 0;
+        }
+        p {
+            font-family: "Roboto";
+        }
+        .needs-pointer {
+            cursor: pointer;
+        }
+        .center {
+            text-align: center;
+        }
+        .site-container {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .top-header-row {
+            background-color: #C9C9C9;
+            height: 10px;
+        }
+        .bottom-header-row {
+            display: flex;
+            justify-content: space-between;
+            padding: 5px;
+        }
+        .header-logo {
+            width: 100px;
+        }
+        .email-link a {
+            text-decoration: none;
+            color: #707070;
+            font-family: 'Roboto';
+            font-size: 12px;
+        }
+        .email-link {
+            padding: 10px 0 0 0;
+        }
+        .hero-section {
+            display: flex;
+            flex-direction: column;
+            position: relative;
+        }
+        .centered {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+        .top-title {
+            background: rgba(0, 0, 0, 0.5);
+            text-transform: uppercase;
+            color: #ffffff;
+            font-family: "Roboto Bold";
+            padding: 10px;
+            font-size: 30px;
+            width: 90%;
+            text-align: center;
+            margin: 10px auto;
+        }
+        .middle-title {
+            background: rgba(0, 0, 0, 0.5);
+            text-transform: uppercase;
+            color: #ffffff;
+            font-family: "Roboto Bold";
+            padding: 10px;
+            font-size: 15px;
+            width: 90%;
+            text-align: center;
+            margin: 0 auto;
+        }
+        .bottom-title {
+            margin: 10px auto;
+        }
+        .contact-us-button {
+            border-radius: 15px;
+            color: #ffffff;
+            font-family: "Roboto Bold";
+            background-color: #307FB8;
+            border: none;
+            padding: 5px 15px;
+        }
+        .contact-us-button:hover {
+            background-color: #1D6090;
+            transition: 0.3s ease;
+        }
+        /*main content*/
+        .welcome-to-ios-section {
+            display: flex;
+            justify-content: space-around;
+        }
+        .welcome-to-ios-left {
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+        }
+        .ios-h2 {
+            font-family: "Roboto Bold";
+            text-transform: uppercase;
+        }
+        .welcome-to-ios-right {
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+            margin-block-start: 0.83em;
+        }
+        .welcome-to-ios-hr {
+            height: 2px;
+            color: #307FB8;
+        }
+        .how-can-i-help-you-wrapper {
+            flex-direction: row;
+            justify-content: center;
+            margin: 0 auto;
+        }
+        .how-can-i-help-you-text {
+            font-family: "Roboto";
+        }
+        .left-quote {
+            color: #307FB8;
+            opacity: 0.3;
+        }
+        .right-quote {
+            color: #307FB8;
+            opacity: 0.3;
+        }
+        @media (max-width: 555px) {
+            .hero-section {
+                height: 220px;
+                background-image: url("/images/architect.png");
+                background-size: cover;
+                padding: 5px;
+            }
+            .bottom-header-row {
+                padding: 5px;
+            }
+            .architect {
+                display: none;
+            }
+            .top-title {
+                font-size: 16px;
+                margin: 5px auto;
+            }
+            .welcome-to-ios-section {
+                flex-direction: column;
+            }
+            .welcome-to-ios-left {
+                width: inherit;
+                margin: 20px;
+            }
+            .welcome-to-ios-right {
+                width: inherit;
+                margin-block-start: 0.83em;
+            }
+            .how-can-i-help-you-wrapper {
+                flex-direction: row;
+                justify-content: center;
+                margin: 0 auto;
+            }
+            .left-quote, .right-quote {
+                font-size: 70px;
+                margin-top: -22px;
+            }
+        }
+    </style>
+</head>
+<div class="site-container">
+    <header>
+        <div class="top-header-row">
+        </div>
+        <div class="bottom-header-row">
+            <img src="/images/IOS_Logo.png" class="header-logo"/>
+            <span class="email-link"><a href="mailto:info@integratedopenings.com">info@integratedopenings.com</a></span>
+        </div>
+    </header>
+    <div class="hero-section">
+        <img class="architect" src="/images/architect.png"/>
+        <div class="centered">
+            <span class="top-title">Integrated Openings Solutions</span>
+            <span class="middle-title">BEST-IN-CLASS SERVICES FOR CONTRACTORS, COMMERCIAL
+                DEVELOPERS, AND BUSINESS OWNERS. INTEGRATED OPENINGS
+                SOLUTIONS DELIVERS.</span>
+            <span class="bottom-title">
+                <button class="contact-us-button needs-pointer">Contact Us</button>
+            </span>
+        </div>
+    </div>
+    <body>
+        <main>
+            <div class="welcome-to-ios-section">
+                <div class="welcome-to-ios-left">
+                    <h2 class="ios-h2 center">Welcome To IOS</h2>
+                    <p>Integrated Openings Solutions, LLC (IOS) is a network of architectural and commercial openings solutions providers. We offer best-in-class customer service, capabilities, and products for projects needing Division 8, 10 and 28 specialization.</p>
+                </div>
+                <div class="welcome-to-ios-right">
+                    <div class="how-can-i-help-you-wrapper">
+                        <span class="left-quote">"</span>
+                        <span class="how-can-i-help-you-text center">
+                            How can I help you?
+                        </span>
+                        <span class="right-quote">"</span>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </body>
+
+</div>
+</html>
