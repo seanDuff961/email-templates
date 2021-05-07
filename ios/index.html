@@ -1,10 +1,45 @@
+SIGNED IN AS
+Sean Duff
+ACCOUNT
+Back to Slack
+Home
+Account & profile
+Configure apps
+Analytics
+Customize
+About this workspace
+OTHER
+Tour
+Download apps
+Brand guidelines
+Help
+API
+Pricing
+Contact
+Policies
+Our blog
+Sign out
+Made with  by Slack
+
+MenuBlack Raven AFC
+Plans
+Workspaces
+Help
+Launch Slack
+Launch
+Sean Duff
+index.html
+20KB HTML snippet created on May 7, 2021. This file is private.
+
+ACTIONS
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <title>Integrated Openings Solutions</title>
     <style>
         @font-face {
             font-family: "Roboto";
@@ -19,9 +54,26 @@
         }
         body {
             margin: 0;
+            background: #E4E4E4;
         }
         p {
             font-family: "Roboto";
+        }
+        main {
+            background: #ffffff;
+            padding-bottom: 20px;
+        }
+        ul  {
+            list-style-type: none;
+            font-family: "Roboto";
+        }
+        ul > li {
+            margin: 10px;
+        }
+        footer {
+            display: flex;
+            background-color: #C9C9C9;
+            flex-direction: column;
         }
         .needs-pointer {
             cursor: pointer;
@@ -41,6 +93,7 @@
             display: flex;
             justify-content: space-between;
             padding: 5px;
+            background: #ffffff;
         }
         .header-logo {
             width: 100px;
@@ -69,7 +122,7 @@
             width: 100%;
         }
         .top-title {
-            background: rgba(0, 0, 0, 0.5);
+            background: rgba(0, 0, 0, 0.6);
             text-transform: uppercase;
             color: #ffffff;
             font-family: "Roboto Bold";
@@ -80,7 +133,7 @@
             margin: 10px auto;
         }
         .middle-title {
-            background: rgba(0, 0, 0, 0.5);
+            background: rgba(0, 0, 0, 0.6);
             text-transform: uppercase;
             color: #ffffff;
             font-family: "Roboto Bold";
@@ -93,37 +146,56 @@
         .bottom-title {
             margin: 10px auto;
         }
-        .contact-us-button {
+        .contact-us-button, .subscribe-button {
             border-radius: 15px;
             color: #ffffff;
             font-family: "Roboto Bold";
             background-color: #307FB8;
             border: none;
             padding: 5px 15px;
+            margin: 0 auto;
         }
-        .contact-us-button:hover {
-            background-color: #1D6090;
+        .contact-us-button:hover, .subscribe-button:hover {
+            background-color: #165079;
             transition: 0.3s ease;
         }
         /*main content*/
         .welcome-to-ios-section {
             display: flex;
             justify-content: space-around;
+            background: #ffffff;
         }
         .welcome-to-ios-left {
             display: flex;
             flex-direction: column;
             width: 50%;
+            padding: 10px;
         }
         .ios-h2 {
             font-family: "Roboto Bold";
             text-transform: uppercase;
+            margin: 0;
+        }
+        .welcome-to-ios-hr {
+            height: 2px;
+            background-color: #307FB8;
+            width: 70%;
+        }
+        .our-team-hr {
+            height: 2px;
+            background-color: #307FB8;
+            width: 50%;
+        }
+        .our-services-hr {
+            height: 2px;
+            background-color: #307FB8;
+            width: 30%;
         }
         .welcome-to-ios-right {
             display: flex;
             flex-direction: column;
             width: 50%;
-            margin-block-start: 0.83em;
+            margin-block-start: 60px;
         }
         .welcome-to-ios-hr {
             height: 2px;
@@ -133,24 +205,165 @@
             flex-direction: row;
             justify-content: center;
             margin: 0 auto;
+            position: relative;
         }
         .how-can-i-help-you-text {
-            font-family: "Roboto";
+            font-family: "Roboto Bold";
+            padding-right: 2px;
         }
         .left-quote {
             color: #307FB8;
+            position: absolute;
             opacity: 0.3;
+            font-size: 40px;
+            left: -20px;
+            top: -10px;
         }
         .right-quote {
             color: #307FB8;
             opacity: 0.3;
+            font-size: 40px;
+            position: absolute;
+            top: -10px;
         }
+        .customer-service {
+            margin: 20px auto;
+        }
+        .our-team-section {
+            display: flex;
+            background: #ffffff;
+            padding-bottom: 10px;
+        }
+        .workers {
+            padding: 30px 15px 0 0;
+        }
+        .our-team-right {
+            padding: 10px;
+        }
+        .our-services-section {
+            display: flex;
+            background: #ffffff;
+            flex-direction: column;
+        }
+        .services-wrapper {
+            display: flex;
+        }
+        .our-services-left, .our-services-right {
+            flex-direction: column;
+        }
+        .our-blog-section {
+            background-color: #ffffff;
+            display: flex;
+            flex-direction: column;
+        }
+        .our-blog-hr {
+            width: 20%;
+            height: 2px;
+            background-color: #307FB8;
+        }
+        .blog-posts-wrapper {
+            display: flex;
+        }
+        .blog-posts-left, .blog-posts-right {
+            padding: 30px 30px 10px 30px;
+        }
+        .blog-post-image {
+            border: .5px solid lightgrey;
+        }
+        .blog-post-description {
+            font-weight: bold;
+        }
+        .new-blog-posts-paragraph {
+            margin: 0 20px;
+        }
+        /*footer*/
+        .footer-middle-left, .footer-middle-right {
+            display: flex;
+            flex-direction: column;
+            font-family: "Roboto";
+            padding: 10px;
+        }
+        .footer-logo {
+            width: 100px;
+            padding: 10px;
+            height: 50px;
+        }
+        .footer-info {
+            margin: 10px;
+        }
+        .footer-top-row {
+            display: flex;
+        }
+        .footer-middle-row {
+            flex-direction: row;
+            display: flex;
+        }
+        .footer-bottom-row {
+            background: #000000;
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+        }
+        .copyright-info, .unsubscribe {
+            color: #ffffff;
+            font-family: "Roboto";
+        }
+        .footer-link, .blog-link {
+            color: #000000;
+            text-decoration: none;
+            margin: 5px 0;
+        }
+        .footer-link:hover, .blog-link:hover {
+            cursor: pointer;
+            color: #165079;
+            transition: 0.3s ease-in-out;
+        }
+        .services-link {
+            text-decoration: none;
+            color: #000000;
+        }
+        .services-link:hover {
+            cursor:pointer;
+            color: #165079;
+            transition: 0.3s ease-in-out;
+        }
+        .footer-heading {
+            font-family: "Roboto Bold";
+        }
+        .social {
+            display: flex;
+            flex-direction: column;
+            font-family: "Roboto";
+            padding: 10px;
+        }
+        .social-icons-wrapper {
+            display: flex;
+            flex-direction: row;
+            margin-top: 5px;
+        }
+        .social-icon {
+            margin: 3px;
+        }
+        .social-icon:hover {
+            color: #165079;
+            transition: 0.3s ease-in-out;
+        }
+
         @media (max-width: 555px) {
             .hero-section {
                 height: 220px;
                 background-image: url("/images/architect.png");
                 background-size: cover;
                 padding: 5px;
+            }
+            .welcome-to-ios-hr {
+                width: 60%;
+            }
+            .our-team-hr {
+                width: 35%;
+            }
+            .our-services-hr {
+                width: 40%;
             }
             .bottom-header-row {
                 padding: 5px;
@@ -178,9 +391,47 @@
                 justify-content: center;
                 margin: 0 auto;
             }
+            .how-can-i-help-you-text {
+                padding-left: 8px;
+            }
             .left-quote, .right-quote {
                 font-size: 70px;
-                margin-top: -22px;
+                margin-top: -12px;
+            }
+            .our-team-section {
+                flex-direction: column;
+            }
+            .our-team-left {
+                margin: 0 auto;
+            }
+            .our-team-right p {
+                margin: 20px;
+            }
+            .services-wrapper {
+                display: flex;
+                flex-direction: column;
+                margin: 0 auto;
+            }
+            .blog-posts-wrapper {
+                flex-direction: column;
+                text-align: center;
+            }
+            .blog-posts-left, .blog-posts-right {
+                padding: 15px;
+            }
+            .footer-top-row {
+                flex-direction: column;
+            }
+            .footer-logo {
+                margin: 0 auto;
+            }
+            .footer-middle-row {
+                flex-direction: column;
+                display: flex;
+                text-align: center;
+            }
+            .social-icons-wrapper {
+                margin: 20px auto;
             }
         }
     </style>
@@ -190,7 +441,7 @@
         <div class="top-header-row">
         </div>
         <div class="bottom-header-row">
-            <img src="/images/IOS_Logo.png" class="header-logo"/>
+            <a href="http://www.integratedopenings.com" target="blank" class="needs-pointer"><img src="/images/IOS_Logo.png" class="header-logo"/></a>
             <span class="email-link"><a href="mailto:info@integratedopenings.com">info@integratedopenings.com</a></span>
         </div>
     </header>
@@ -202,7 +453,7 @@
                 DEVELOPERS, AND BUSINESS OWNERS. INTEGRATED OPENINGS
                 SOLUTIONS DELIVERS.</span>
             <span class="bottom-title">
-                <button class="contact-us-button needs-pointer">Contact Us</button>
+                <a href="mailto:info@integratedopenings.com"><button class="contact-us-button needs-pointer">Contact Us</button></a>
             </span>
         </div>
     </div>
@@ -211,6 +462,7 @@
             <div class="welcome-to-ios-section">
                 <div class="welcome-to-ios-left">
                     <h2 class="ios-h2 center">Welcome To IOS</h2>
+                    <hr class="welcome-to-ios-hr"/>
                     <p>Integrated Openings Solutions, LLC (IOS) is a network of architectural and commercial openings solutions providers. We offer best-in-class customer service, capabilities, and products for projects needing Division 8, 10 and 28 specialization.</p>
                 </div>
                 <div class="welcome-to-ios-right">
@@ -219,12 +471,103 @@
                         <span class="how-can-i-help-you-text center">
                             How can I help you?
                         </span>
-                        <span class="right-quote">"HelloWorld</span>
+                        <span class="right-quote">"</span>
+                    </div>
+                    <img class="customer-service" src="/images/customer-service.png"/>
+                </div>
+            </div>
+            <div class="our-team-section">
+                <div class="our-team-left">
+                    <img class="workers" src="/images/workers.png"/>
+                </div>
+                <div class="our-team-right">
+                    <h2 class="ios-h2 center">Our Team</h2>
+                    <hr class="our-team-hr"/>
+                    <p>Our team is made up of the best project managers, installation professionals, and logistics experts in the commercial openings industry. Some of the end markets and verticals served by our network include government buildings, industrial facilities, hotels, and hospitality.</p>
+                </div>
+            </div>
+            <div class="our-services-section">
+                <h2 class="ios-h2 center">Our Services</h2>
+                <hr class="our-services-hr"/>
+                <div class="services-wrapper">
+                    <div class="our-services-left">
+                        <ul>
+                            <li><span><i class="fas fa-cctv fa-sm"></i><a href="https://integratedopenings.com/capabilities/access-control-cctv/" class="services-link" target="blank">Access Conrol / CCTV</a></span></li>
+                            <li><a href="https://integratedopenings.com/capabilities/architectural-commercial-wood-doors/" class="services-link" target="blank">Architectural & Commercial Wood Doors</a></li>
+                            <li><a href="https://integratedopenings.com/capabilities/architectural-door-hardware/" class="services-link" target="blank">Architectural Door Hardware</a></li>
+                            <li><a href="https://integratedopenings.com/capabilities/automatic-doors/" class="services-link" target="blank">Automatic Door Technology</a></li>
+                            <li><a href="https://integratedopenings.com/capabilities/door-repair/" class="services-link" target="blank">Door Repair</a></li>
+                            <li><a href="https://integratedopenings.com/capabilities/gate-access-systems/" class="services-link" target="blank">Gate Access Systems</a></li>
+                        </ul>
+                    </div>
+                    <div class="our-services-right">
+                        <ul>
+                            <li><a href="https://integratedopenings.com/capabilities/ifdia-and-aaadm-field-inspections/" class="services-link" target="blank">IFDIA Certified and AAADM</a></li>
+                            <li><a href="https://integratedopenings.com/capabilities/sectional-rolling-doors/" class="services-link" target="blank">Sectional & Rolling Doors</a></li>
+                            <li><a href="https://integratedopenings.com/capabilities/specialty-doors/" class="services-link" taret="blank">Specialty Doors</a></li>
+                            <li><a href="https://integratedopenings.com/capabilities/steel-doors-frames/" class="services-link" target="blank">Steel Doors & Frames</a></li>
+                            <li><a href="https://integratedopenings.com/capabilities/washroom-accessories/" class="services-link" target="blank">Washroom Accessories</a></li>
+                            <li><a href="https://integratedopenings.com/capabilities/windows/" class="services-link" target="blank">Windows</a></li>
+                        </ul>
                     </div>
                 </div>
             </div>
+            <div class="our-blog-section">
+                <h2 class="ios-h2 center">Our Blog</h2>
+                <hr class="our-blog-hr"/>
+                <p class="new-blog-posts-paragraph center">New blog posts every month concerning news, holidays, and updates!</span>
+                <div class="blog-posts-wrapper">
+                    <div class="blog-posts-left">
+                        <a href="https://integratedopenings.com/integrated-openings-solutions-llc-ios-is-happy-to-celebrate-national-automatic-door-day/" class="blog-link" target="blank">
+                            <img class="blog-post-image" src="/images/automatic-door.png" alt="automatic door"/>
+                            <p class="blog-post-description">Integrated Openings Solutions, LLC (IOS) Is Happy to Celebrate National Automatic Door Day</p>
+                        </a>
+                        <a href="https://integratedopenings.com/integrated-openings-solutions-llc-ios-is-happy-to-celebrate-national-automatic-door-day/" target="blank" class="blog-link"><p class="read-more">Read More >></p></a>
+                    </div>
+                    <div class="blog-posts-right">
+                        <a href="https://integratedopenings.com/integrated-openings-solutions-llc-ios-launches-new-location-ios-naples/" class="blog-link" target="blank">
+                        <img class="blog-post-image" src="/images/map.png" alt="integrated openings solutions map"/>
+                        <p class="blog-post-description">Integrated Openings Solutions, LLC (IOS) Launches New Locations: IOS Naples</p>
+                        </a>
+                        <a href="https://integratedopenings.com/integrated-openings-solutions-llc-ios-launches-new-location-ios-naples/" target="blank" class="blog-link"><p class="read-more">Read More >></p></a>
+                    </div>
+                </div>
+                <button class="subscribe-button center needs-pointer">Subscribe</button>
+            </div>
         </main>
     </body>
-
+    <footer>
+        <div class="footer-top-row">
+            <img src="/images/IOS_Logo.png" class="footer-logo"/>
+            <p class="footer-info">Whether it's Cardinal Hardware, Cardinal Door & Hardware, Commercial Doors, or Architectural Doors Integration, you can count on IOS. Contact us today!</p>
+        </div>
+        <div class="footer-middle-row">
+            <div class="footer-middle-left">
+                <span class="footer-heading">Contact</span>
+                <a href="mailto:info@integratedopenings.com" class="footer-link">info@integratedopenings.com</a>
+                <a href="https://www.integratedopenings.com" target="blank" class="footer-link">integratedopenings.com</a>
+                <a href="https://www.integratedopenings.com/locations" target="blank" class="footer-link">Locations</a>
+            </div>
+            <div class="footer-middle-right">
+                <span class="footer-heading">Quick Links</span>
+                <span class="footer-link">Capabilities</span>
+                <span class="footer-link">Access Control / CCTV</span>
+            </div>
+            <div class="social">
+                <span class="footer-heading">Social</span>
+                <div class="social-icons-wrapper">
+                    <i class="fab fa-facebook-square fa-lg social-icon needs-pointer"></i>
+                    <i class="fab fa-twitter-square fa-lg social-icon needs-pointer"></i>
+                    <i class="fab fa-linkedin fa-lg social-icon needs-pointer"></i>
+                    <i class="fab fa-instagram-square fa-lg social-icon needs-pointer"></i>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom-row">
+            <div class="copyright-info">Copyright ©2021 Integrated Openings Solutions</div>
+            <div class="unsubscribe needs-pointer">Unsubscribe</div>
+        </div>
+    </footer>
 </div>
 </html>
+
